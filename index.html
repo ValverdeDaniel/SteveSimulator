@@ -6,11 +6,10 @@
     <title>Unity WebGL Player | Text101</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SteveSimulator5.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SteveSimulator6.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -27,6 +26,11 @@
       <div class="header">
         <nav class="navbar navbar-dark bg-dark">
           <span class="navbar-brand mb-0 h1">Steve Simulator</span>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=bANjQqUVgvM" >Background Audio <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
         </nav>
       </div>   
       <div id="gameContainer" style="width: 720px; height: 405px"></div>
@@ -37,6 +41,5 @@
         <div class="title">FullScreen</div>
       </div>
     </div>
-
   </body>
 </html>
